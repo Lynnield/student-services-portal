@@ -74,3 +74,16 @@ console.log(studentResponse);
 console.log(studentsResponse);
 
 console.log(formatStudent(student));
+
+type StudentStatus = "active" | "inactive";
+
+function getStudentStatusLabel(status: StudentStatus): string {
+  if (status === "active") {
+    return "Active Student";
+  }
+
+  return "Inactive Student";
+}
+
+console.log("Active label:", getStudentStatusLabel("active"));
+console.log("Inactive label:", getStudentStatusLabel("inactive"));

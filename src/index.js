@@ -52,4 +52,12 @@ console.log("Missing name:", isStudent(missingNameData));
 console.log(studentResponse);
 console.log(studentsResponse);
 console.log(formatStudent(student));
+function getStudentStatusLabel(status) {
+  if (status === "active") {
+    return "Active Student";
+  }
+  return "Inactive Student";
+}
+console.log("Active label:", getStudentStatusLabel("active"));
+console.log("Inactive label:", getStudentStatusLabel("inactive"));
 //# sourceMappingURL=index.js.map
